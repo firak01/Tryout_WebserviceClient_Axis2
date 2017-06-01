@@ -40,6 +40,8 @@ public class Client {
 //			e.printStackTrace();
 //		}      
 		
+		
+		//Merke: Wenn sich der WebService ändert einfach die Prox - Klassen neu erzeugen lassen.
 	 
 		 //2) 
 		HelloServiceProxy proxy = new HelloServiceProxy();
@@ -49,6 +51,9 @@ public class Client {
 		try {
 			String sReturn = service.sayHello("FRITZ");
 			System.out.println("Response : " + sReturn);
+			
+			sReturn = service.getNow();
+			System.out.println("getNow() liefert zurück: " + sReturn);
 		} catch (RemoteException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

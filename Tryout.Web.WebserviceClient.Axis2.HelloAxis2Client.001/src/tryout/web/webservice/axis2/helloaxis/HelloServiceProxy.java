@@ -44,6 +44,12 @@ public class HelloServiceProxy implements tryout.web.webservice.axis2.helloaxis.
     return helloService;
   }
   
+  public java.lang.String getNow() throws java.rmi.RemoteException{
+    if (helloService == null)
+      _initHelloServiceProxy();
+    return helloService.getNow();
+  }
+  
   public java.lang.String sayHello(java.lang.String name) throws java.rmi.RemoteException{
     if (helloService == null)
       _initHelloServiceProxy();

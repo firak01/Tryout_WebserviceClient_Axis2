@@ -8,5 +8,6 @@
 package tryout.web.webservice.axis2.helloaxis;
 
 public interface HelloService extends java.rmi.Remote {
+    public java.lang.String getNow() throws java.rmi.RemoteException;
     public java.lang.String sayHello(java.lang.String name) throws java.rmi.RemoteException;
 }
