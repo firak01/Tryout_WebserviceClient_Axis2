@@ -41,7 +41,7 @@ public class Client {
 //		}      
 		
 		
-		//Merke: Wenn sich der WebService ändert einfach die Prox - Klassen neu erzeugen lassen.
+		//Merke: Wenn sich der WebService ändert einfach die Proxy - Klassen neu erzeugen lassen.
 	 
 		 //2) 
 		HelloServiceProxy proxy = new HelloServiceProxy();
